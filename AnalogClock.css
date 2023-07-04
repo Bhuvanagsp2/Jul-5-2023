@@ -1,0 +1,122 @@
+body{
+  background-color: #333;
+}
+.clock {
+  background: #d4d4d4;
+  width: 300px;
+  height: 300px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 14px solid #333;
+  position: relative;
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.574);
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #aaaaaa;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.359);
+}
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 4px;
+  height: 70px;
+  background: #7d0000;
+  top: 85px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: #06003d;
+  top: 46px;
+  left: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 105px;
+}
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 120px;
+  background: rgb(255, 123, 0);
+  top: 26px;
+  lefT: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 125px;
+}
+span {
+  position: absolute;
+  color: #262626;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 1000;
+}
+.hour12 {
+  top: 30px;
+  left: 50%;
+  margin-left: -9px;
+}
+.hour3 {
+  top: 130px;
+  right: 30px;
+}
+.hour6 {
+  bottom: 30px;
+  left: 50%;
+  margin-left: -5px;
+}
+.hour9 {
+  left: 32px;
+  top: 130px;
+}
+.diallines {
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #666;
+  left: 50%;
+  transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n) {  
+  width: 4px;
+  height: 25px;
+  background: #484848;
+}
+.info {
+  position: absolute;
+  width: 120px;
+  border-radius: 15px;
+  background: #c2c2c2;
+  text-align: center;
+  line-height: 20px;
+  color: #4e4e4e;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 3px;
+  margin-left: -60px;
+  left: 50%;
+}
+.date {
+  top: 80px;
+}
+.day {
+  top: 200px;
+}
